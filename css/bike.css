@@ -4,12 +4,17 @@
 .banner img{
     width: 100%;
 }
+.detail .detail-bike{
+    width: 990px;
+    margin:  0 auto;
+}
 .detail .detail-bike h3{
     font-family:PingFangSC-Semibold;
     font-size:24px;
     color:#6a6a6a;
     letter-spacing:1.57px;
     line-height:35px;
+    margin-bottom: 7px;
 }
 .detail .detail-bike h5{
     font-family:PingFangSC-Regular;
@@ -17,4 +22,193 @@
     color:#6a6a6a;
     letter-spacing:1px;
     line-height:29px;
+}
+
+
+/* 轮播 */
+.box{
+    width: 600px;
+    height: 410px;
+    margin: 60px auto 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.box_img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.box_img ul{
+    margin: 0 auto;
+    width: 100%;
+}
+.box_img ul li{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.box_img ul li img{
+    display: block;
+    margin: 0 auto;
+}
+
+.box_tab{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.box_tab a{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    margin: 0 5px;
+    border:1px solid #fff;
+    text-align: center;
+}
+.box_tab a.active{
+    border:1px solid #979797;
+}
+.box_tab a span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #b8f037;
+}
+
+#girlBike-1 .box_tab a:nth-child(1) span{
+    background: red;
+}
+#girlBike-1 .box_tab a:nth-child(2) span{
+    background: #57a5e5;
+}
+#girlBike-1 .box_tab a:nth-child(3) span{
+    background: #b8f037;
+}
+
+/* shop */
+.detail .detail-bike .shop{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.detail .detail-bike .shop a div{
+    display: inline-block;
+    border:1px solid #6a6a6a;
+    border-radius:100px;
+    width:151px;
+    height:36px;
+    margin: 0 7px;
+    padding-left: 28px;
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#6a6a6a;
+    letter-spacing:0.92px;
+    line-height:34px;
+    text-align: left;
+    position: relative;
+}
+
+.detail .detail-bike .shop a div span{
+    background: #6a6a6a;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    display: inline-block;
+    color: #fff;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding-left: 2px;
+}
+.detail .detail-bike hr{
+    border-top: 1px solid #d4d4d4;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.detail .bike-table{
+    width: 990px;
+    margin: 0 auto 60px;
+}
+.detail .bike-table .size{
+   padding: 30px 60px;
+}
+.detail .bike-table .size h4{
+    font-family: PingFangSC-Semibold;
+    font-size: 24px;
+    color: #6a6a6a;
+    letter-spacing: 1.57px;
+    line-height: 35px;
+    margin-top: 15px;
+}
+.detail .bike-table .size p{
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#6a6a6a;
+    letter-spacing:0.54px;
+    line-height:18px;
+}
+.detail .bike-table .highlight{
+   padding: 30px 15px;
+}
+.detail .bike-table .highlight img{
+    display: block;
+    margin: 0 auto;
+}
+.detail .bike-table .highlight h5{
+    font-family:PingFangSC-Semibold;
+    font-size:18px;
+    color:#6a6a6a;
+    letter-spacing:0.3px;
+    line-height:29px;
+    text-align:center;
+    margin-top: 10px;
+}
+.detail .bike-table .highlight p{
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#6a6a6a;
+    letter-spacing:0.54px;
+    line-height:20px;
+    text-align:center;
+}
+
+
+
+
+.nomo-row:after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+.nomo-col-3{
+    width: 33.3333%;
+    display: inline-block;
+    border: 1px solid #6a6a6a;
+    border-left: 0px solid #6a6a6a;
+    float: left;
+}
+.nomo-col-3:first-child{
+    border-left: 1px solid #6a6a6a;
+}
+
+.nomo-col-5{
+    width: 20%;
+    display: inline-block;
+    border: 1px solid #6a6a6a;
+    border-left: 0px solid #6a6a6a;
+    border-top: 0px solid #6a6a6a;
+    float: left;
+}
+.nomo-col-5:first-child{
+    border-left: 1px solid #6a6a6a;
 }
