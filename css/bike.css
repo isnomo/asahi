@@ -1,0 +1,20 @@
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.detail .detail-bike h3{
+    font-family:PingFangSC-Semibold;
+    font-size:24px;
+    color:#6a6a6a;
+    letter-spacing:1.57px;
+    line-height:35px;
+}
+.detail .detail-bike h5{
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#6a6a6a;
+    letter-spacing:1px;
+    line-height:29px;
+}
