@@ -1,3 +1,10 @@
+.content{
+    width: 990px; 
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
 .banner{
     width: 100%;
 }
@@ -5,8 +12,8 @@
     width: 100%;
 }
 .detail .detail-bike{
-    width: 990px;
-    margin:  0 auto;
+    /* width: 990px;
+    margin:  0 auto; */
 }
 .detail .detail-bike h3{
     font-family:PingFangSC-Semibold;
@@ -28,7 +35,7 @@
 /* 轮播 */
 .box{
     width: 600px;
-    height: 410px;
+    height: 400px;
     margin: 60px auto 0;
     overflow: hidden;
     position: relative;
@@ -82,13 +89,22 @@
 }
 
 #girlBike-1 .box_tab a:nth-child(1) span{
-    background: red;
+    background: #FF9FD2;
 }
 #girlBike-1 .box_tab a:nth-child(2) span{
     background: #57a5e5;
 }
 #girlBike-1 .box_tab a:nth-child(3) span{
     background: #b8f037;
+}
+#girlBike-2 .box_tab a:nth-child(1) span{
+    background: #81f1e5;
+}
+#girlBike-3 .box_tab a:nth-child(1) span{
+    background: #EBDAD3;
+}
+#girlBike-3 .box_tab a:nth-child(2) span{
+    background: #D6EA6D;
 }
 
 /* shop */
@@ -136,7 +152,6 @@
 }
 
 .detail .bike-table{
-    width: 990px;
     margin: 0 auto 60px;
 }
 .detail .bike-table .size{
@@ -158,7 +173,7 @@
     line-height:18px;
 }
 .detail .bike-table .highlight{
-   padding: 30px 15px;
+   padding: 25px 15px;
 }
 .detail .bike-table .highlight img{
     display: block;
@@ -169,7 +184,7 @@
     font-size:18px;
     color:#6a6a6a;
     letter-spacing:0.3px;
-    line-height:29px;
+    line-height:30px;
     text-align:center;
     margin-top: 10px;
 }
@@ -180,7 +195,36 @@
     letter-spacing:0.54px;
     line-height:20px;
     text-align:center;
+    height: 40px;
 }
+/* pic */
+.detail .bike-pic{
+    margin-top: 80px;
+}
+.detail .bike-pic img{
+    width: 100%;
+}
+.detail .bike-pic h5{
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #6A6A6A;
+    letter-spacing: 0.69px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+.detail .bike-pic p{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6A6A6A;
+    letter-spacing: 0.54px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
 
 
 
