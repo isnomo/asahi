@@ -102,3 +102,81 @@ footer .foot-last .SNS .weibo{
     height: 280px;
     position: absolute;
 }
+
+/*电脑*/
+@media screen  and (min-width:1400px){
+    
+}
+/*笔记本*/
+@media screen and (max-width: 1399px) and (min-width: 1200px){
+
+}
+/*横向平板*/
+@media screen and (max-width: 1199px) and (min-width: 1023px){
+
+}
+/*平板*/
+@media screen and (max-width: 1023px) and (min-width: 768px){
+
+}
+/*笔记本高度*/
+@media screen and (max-height: 767px) and (min-height: 600px){
+
+}
+/*手机*/
+@media screen and (max-width: 767px){
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .content,.box{
+        width: 100%;
+    }
+    footer .foot-info .row div:first-child{
+        border-right: 0px solid #fff;
+        margin-bottom: 15px;
+    }
+    footer .foot-info .row div:last-child{
+        padding-left: 15px;
+    }
+    footer .foot-info{
+        margin-top: 30px;
+    }
+    footer .foot-last .SNS {
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+    footer .foot-last {
+        margin-top: 80px;
+    }
+    #footer{
+        height: 358px;
+    }
+    footer .foot-info{
+        width: 100%;
+    }
+    footer .foot-info p{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .card .col-xs-6:nth-child(odd){
+        padding-right: 7px;
+    }
+    .card .col-xs-6:nth-child(even){
+        padding-left: 7px;
+    }
+    
+}
+@media screen and (max-width: 320px){
+    #footer{
+        height: 410px;
+    }
+    .card .series .series-text p:last-child{
+        height: 40px;
+    }
+    
+}
+@media screen and (max-height: 601px) and (min-height: 350px){
+    
+}
