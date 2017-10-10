@@ -113,11 +113,22 @@ footer .foot-last .SNS .weibo{
 }
 /*横向平板*/
 @media screen and (max-width: 1199px) and (min-width: 1023px){
-
+    .content,.box{
+        width: 100%;
+    }
 }
 /*平板*/
 @media screen and (max-width: 1023px) and (min-width: 768px){
-
+    .content,.box{
+        width: 100%;
+    }
+    footer .foot-info{
+        width: 100%;
+    }
+    footer .foot-info p{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
 }
 /*笔记本高度*/
 @media screen and (max-height: 767px) and (min-height: 600px){

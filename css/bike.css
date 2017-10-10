@@ -273,11 +273,15 @@
 }
 /*横向平板*/
 @media screen and (max-width: 1199px) and (min-width: 1023px){
-
+    .content,.box{
+        width: 100%;
+    }
 }
 /*平板*/
 @media screen and (max-width: 1023px) and (min-width: 768px){
-
+    .content,.box{
+        width: 100%;
+    }
 }
 /*笔记本高度*/
 @media screen and (max-height: 767px) and (min-height: 600px){
