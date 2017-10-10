@@ -29,6 +29,7 @@
     color:#6a6a6a;
     letter-spacing:1px;
     line-height:29px;
+    text-align: justify;
 }
 
 
@@ -37,10 +38,33 @@
     width: 600px;
     height: 400px;
     margin: 60px auto 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     text-align: center;
 }
+.box_left{
+    width: 14px;
+    height: 22px;
+    cursor: pointer;
+    background: url('../img/icon/left.png')no-repeat center;
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    margin-left: -400px;
+}
+.box_right{
+    width: 14px;
+    height: 22px;
+    cursor: pointer;
+    background: url('../img/icon/right.png')no-repeat center;
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    margin-left: 400px;
+}
+
 .box_img{
     width: 100%;
     height: 350px;
@@ -60,6 +84,7 @@
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    user-select: none;
 }
 
 .box_tab{
@@ -87,8 +112,10 @@
     height: 15px;
     border-radius: 100%;
     background: #b8f037;
+    box-shadow: 0px 0px 1px rgba(1,1,1,.3);
 }
 
+/* 少女车 */
 #girlBike-1 .box_tab a:nth-child(1) span{
     background: #FF9FD2;
 }
@@ -107,6 +134,39 @@
 #girlBike-3 .box_tab a:nth-child(2) span{
     background: #D6EA6D;
 }
+
+/* 山地车 */
+#mountainBike-1 .box_tab a:nth-child(1) span{
+    background: #006AB7;
+}
+#mountainBike-1 .box_tab a:nth-child(2) span{
+    background: #ffffff;
+}
+#mountainBike-1 .box_tab a:nth-child(3) span{
+    background: #000000;
+}
+#mountainBike-2 .box_tab a:nth-child(1) span{
+    background: #880007;
+}
+#mountainBike-2 .box_tab a:nth-child(2) span{
+    background: #0062A0;
+}
+#mountainBike-2 .box_tab a:nth-child(3) span{
+    background: #989293;
+}
+#mountainBike-3 .box_tab a:nth-child(1) span{
+    background: #F7BFD1;
+}
+#mountainBike-3 .box_tab a:nth-child(2) span{
+    background: #71A7CD;
+}
+
+
+
+
+
+
+
 
 /* shop */
 .detail .detail-bike .shop{
@@ -215,6 +275,9 @@
     margin-top: 30px;
     text-align: center;
 }
+.detail .bike-pic .col-sm-4 h5{
+    margin-top: 15px;
+}
 .detail .bike-pic p{
     font-family: PingFangSC-Regular;
     font-size: 14px;
@@ -223,9 +286,19 @@
     line-height: 20px;
     text-align: center;
     margin-bottom: 60px;
+    height: 40px;
 }
 .detail .bike-pic p:last-child{
     margin-bottom: 20px;
+}
+.detail .bike-table .ps{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6A6A6A;
+    letter-spacing: 0.54px;
+    line-height: 14px;
+    margin-top: 30px;
 }
 
 
@@ -247,6 +320,22 @@
     border-left: 1px solid #6a6a6a;
     border-top: 1px solid #6a6a6a;
 }
+.nomo-col-6{
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #6a6a6a;
+    border-left: 0px solid #6a6a6a;
+    float: left;
+}
+.nomo-col-6:first-child{
+    border-left: 1px solid #6a6a6a;
+    border-top: 1px solid #6a6a6a;
+}
+.nomo-col-6 .size-text{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 
 .nomo-col-5{
     width: 19.999%;
@@ -289,9 +378,14 @@
 }
 /*手机*/
 @media screen and (max-width: 767px){
+    .box_left,.box_right{
+        display: none;
+    }
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
     }
     .content,.box{
         width: 100%;
@@ -300,6 +394,11 @@
         height: 300px;
     }
     .nomo-col-3{
+        width: 100%;
+        border-left: 1px solid #6a6a6a;
+        border-top: 0px solid #6a6a6a;
+    }
+    .nomo-col-6{
         width: 100%;
         border-left: 1px solid #6a6a6a;
         border-top: 0px solid #6a6a6a;
@@ -321,17 +420,42 @@
     .detail .bike-pic img {
         margin-bottom: 15px;
     }
-    .detail .bike-pic h5{
-        margin-top: 10px;
-    }
     footer .foot-info .row div:first-child{
         border-right: 0px solid #fff;
     }
     footer .foot-info .row div:last-child{
         padding-left: 15px;
     }
+    .detail .bike-pic h5{
+        font-size: 16px;
+    }
+    .detail .detail-bike .shop a div {
+        width: 120px;
+        padding-left: 15px;
+        font-size: 12px;
+    }
+    .detail .bike-pic .col-sm-4 h5 {
+        margin-top: 0px;
+    }
+    .detail .bike-pic p{
+        height: 60px;
+    }
+    .detail .detail-bike .shop a div span {
+        width: 18px;
+        height: 18px;
+        line-height: 15px;
+        font-size: 18px;
+        top: 7px;
+    }
 }
-
+@media screen and (max-width: 320px){
+    .box {
+        height: 250px;
+    }
+    .box_img {
+        height: 200px;
+    }
+}
 @media screen and (max-height: 601px) and (min-height: 350px){
 
 }

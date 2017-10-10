@@ -177,6 +177,9 @@ footer .foot-last .SNS .weibo{
     .card .col-xs-6:nth-child(even){
         padding-left: 7px;
     }
+    footer {
+        padding: 35px 5px;
+    }
     
 }
 @media screen and (max-width: 320px){
