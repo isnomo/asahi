@@ -171,10 +171,45 @@
 #brandsBike-2 .box_tab a:nth-child(2) span{
     background: #FC3739;
 }
-
-
-
-
+/* 梦工厂 */
+#dreamBike-1 .box_tab a:nth-child(1) span{
+    background: #F3EBDA;
+}
+#dreamBike-1 .box_tab a:nth-child(2) span{
+    background: #FCCA12;
+}
+#dreamBike-1 .box_tab a:nth-child(3) span{
+    background: #F72834;
+}
+#dreamBike-1 .box_tab a:nth-child(4) span{
+    background: #092765;
+}
+/* Hello Kitty */
+#hkBike-1 .box_tab a:nth-child(1) span{
+    background: #df3410;
+}
+/* dually */
+#duallyBike-1 .box_tab a:nth-child(1) span{
+    background: #006AB7;
+}
+#duallyBike-1 .box_tab a:nth-child(2) span{
+    background: #D0021B;
+}
+#duallyBike-1 .box_tab a:nth-child(3) span{
+    background: #D1D1D1;
+}
+#duallyBike-1 .box_tab a:nth-child(4) span{
+    background: #258170;
+}
+#duallyBike-2 .box_tab a:nth-child(1) span{
+    background: #F2889E;
+}
+#duallyBike-2 .box_tab a:nth-child(2) span{
+    background: #E3E4E3;
+}
+#duallyBike-2 .box_tab a:nth-child(3) span{
+    background: #5A3D80;
+}
 
 
 
@@ -298,9 +333,9 @@
     margin-bottom: 60px;
     height: 40px;
 }
-.detail .bike-pic p:last-child{
+/* .detail .bike-pic p:last-child{
     margin-bottom: 20px;
-}
+} */
 .detail .bike-table .ps{
     text-align: center;
     font-family: PingFangSC-Regular;
