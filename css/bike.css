@@ -161,6 +161,16 @@
     background: #71A7CD;
 }
 
+/* 品牌车 */
+#brandsBike-1 .box_tab a:nth-child(1) span{
+    background: #ff92ba;
+}
+#brandsBike-2 .box_tab a:nth-child(1) span{
+    background: #D8D72A;
+}
+#brandsBike-2 .box_tab a:nth-child(2) span{
+    background: #FC3739;
+}
 
 
 
@@ -427,7 +437,7 @@
         padding-left: 15px;
     }
     .detail .bike-pic h5{
-        font-size: 16px;
+        font-size: 15px;
     }
     .detail .detail-bike .shop a div {
         width: 120px;
@@ -439,6 +449,7 @@
     }
     .detail .bike-pic p{
         height: 60px;
+        overflow: hidden;
     }
     .detail .detail-bike .shop a div span {
         width: 18px;
@@ -447,6 +458,13 @@
         font-size: 18px;
         top: 7px;
     }
+    .detail .bike-table .size p{
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+    .detail .bike-table .size img{
+        width: 145px;
+    }
 }
 @media screen and (max-width: 320px){
     .box {
@@ -454,6 +472,15 @@
     }
     .box_img {
         height: 200px;
+    }
+    .detail .bike-pic .col-sm-4{
+        height: 238px;
+    }
+    .detail .bike-table .size {
+        text-align: center;
+    }
+    .detail .bike-table .size img{
+        width: auto;
     }
 }
 @media screen and (max-height: 601px) and (min-height: 350px){
