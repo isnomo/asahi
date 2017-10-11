@@ -71,7 +71,20 @@
             }
         }
     })
-   
+
+    $("header .logo-text ul li ").hover(function(){
+        $(this).find('.class').stop().show();
+    },function(){
+        // setTimeout(function(){
+        //     $('.class').stop().slideUp(300);
+        // }, 500);
+        $(this).find('.class').stop().hide();
+    });
+    
+    $("header .logo-text ul li .noClick").click(function(){
+        event.preventDefault();
+    });
+
 
     function init() {
 		findDimensions();

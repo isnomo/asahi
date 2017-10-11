@@ -12,7 +12,7 @@ function bannerListFn(option){
     var array=0;
     var timeOff=0;
     var imgPos=$bannerMaxWapDom.find("ul").find("li");
- 
+    
     var cloneOne=imgPos.first().clone();
     $bannerMaxWapDom.find("ul").append(cloneOne);
     $bannerMaxWapDom.find("li").width(windowWidth);
@@ -20,6 +20,7 @@ function bannerListFn(option){
     var liWidth=imgPos.width();
     var liLength = $bannerMaxWapDom.find("li").length;
 
+    
     $bannerMaxWapDom.find("ul").width( liWidth * liLength );
 
     setTimeout(function(i){
