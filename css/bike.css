@@ -210,7 +210,23 @@
 #duallyBike-2 .box_tab a:nth-child(3) span{
     background: #5A3D80;
 }
-
+/* 学步车 */
+#walkerBike-1 .box_tab a:nth-child(1) span{
+    background: #0089B6;
+}
+#walkerBike-1 .box_tab a:nth-child(2) span{
+    background: #DCACCD;
+}
+/* 沙滩车 */
+#beachBike-1 .box_tab a:nth-child(1) span{
+    background: #DA330C;
+}
+#beachBike-1 .box_tab a:nth-child(2) span{
+    background: #185D8F;
+}
+#beachBike-1 .box_tab a:nth-child(3) span{
+    background: #E8B3C8;
+}
 
 
 /* shop */
@@ -251,7 +267,7 @@
     right: 10px;
     padding-left: 2px;
 }
-.detail .detail-bike hr{
+.detail hr{
     border-top: 1px solid #d4d4d4;
     margin-top: 0;
     margin-bottom: 80px;
@@ -345,7 +361,11 @@
     line-height: 14px;
     margin-top: 30px;
 }
-
+.detail .pj{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
 
 
@@ -380,8 +400,18 @@
     display: inline-block;
     vertical-align: bottom;
 }
-
-
+.nomo-col-12{
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #6a6a6a;
+    border-left: 1px solid #6a6a6a;
+    float: left;
+    text-align: center;
+}
+.detail .bike-table .nomo-col-12 .size-text{
+    display: inline-block;
+    vertical-align: bottom;
+}
 .nomo-col-5{
     width: 19.999%;
     display: inline-block;
@@ -394,6 +424,10 @@
     border-left: 1px solid #6a6a6a;
 }
 
+/* 棕色 */
+.detail .zs .size p,.detail .zs .size h4,.detail .zs .highlight h5,.detail .zs .highlight p,.detail .zspic .col-sm-4 h5,.detail .zspic p{
+    color: #907369;
+}
 
 
 
