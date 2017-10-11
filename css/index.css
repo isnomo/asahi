@@ -130,6 +130,7 @@
 .company .news .news-content .news-item span{
     font-size: 14px;
     color: #6A6A6A;
+    transition: all .3s cubic-bezier(0.38, 0.32, 0.36, 0.98);
 }
 .company .news .news-content .news-item b{
     display: inline-block;
@@ -157,6 +158,13 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    transition: all .3s cubic-bezier(0.38, 0.32, 0.36, 0.98);
+}
+.company .news .news-content .news-item:hover p{
+    color: #003f81;
+}
+.company .news .news-content .news-item:hover span{
+    color: #003f81;
 }
 
 /* 合作 */
