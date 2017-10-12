@@ -249,7 +249,7 @@ header .logo-text .navbar-nav li .class ul li a:hover p{
     padding-left: 30px;
     transition: all .3s cubic-bezier(0.38, 0.32, 0.36, 0.98);
 }
-.menu-panel .panel-heading .panel-title:focus,.menu-panel .panel-heading .panel-title:active{
+.menu-panel .panel-heading .panel-title:hover{
     color: #fff;
     background: #003E81;
 }
