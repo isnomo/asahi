@@ -123,7 +123,10 @@
         }
         isOpen = !isOpen;
     }
-
+    $('.back-menu').on('click',function(){
+        $('html').removeClass('show-menu');
+        $('#open-button').removeClass('btn-close');
+    });
 
     init();
 })();
