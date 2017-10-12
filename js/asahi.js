@@ -105,6 +105,16 @@
             findDimensions();
         });
         initEvents();
+
+        if (window.devicePixelRatio > 1) {
+            var images = $("img");
+            // images.each(function(i) {
+            //     var x1 = $(this).attr('src');
+            //     var x2 = x1.replace(/(.*)(\.\w+)/, "$1@2x$2");
+            //     $(this).attr('src', x2);
+            // });
+            alert('高清屏！');
+        }
     }
 
     // 侧边栏按钮
@@ -128,7 +138,7 @@
         $('#open-button').removeClass('btn-close');
     });
 
-    
+
 
     init();
 })();
