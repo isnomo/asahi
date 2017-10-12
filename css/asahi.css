@@ -332,11 +332,17 @@ footer .foot-last .SNS a{
     height: 32px;
 }
 footer .foot-last .SNS .wechat{
-    background: url('../img/wechat.png')no-repeat center;
+    background-image: url('../img/wechat.png');
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
 }
 footer .foot-last .SNS .weibo{
     margin-left: 15px;
-    background: url('../img/weibo.png')no-repeat center;
+    background-image: url('../img/weibo.png');
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
 }
 #footer{
     width: 100%;
