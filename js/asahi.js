@@ -64,7 +64,6 @@
             var txtare = $('.partner form textarea').val();
             if(ipt != '' && txtare != ''){
                 $('.partner form button').removeAttr('disabled').removeClass('disabled');
-                console.log('不为空');
             }else{
                 $('.partner form button').attr('disabled','disabled').addClass('disabled');
                 return false;
@@ -72,12 +71,24 @@
         }
     })
 
+    $('.partner form button').click(function(){
+        alert('暂未开放，敬请期待！');
+    });
+
+    // var isOff = true;
     $("header .logo-text ul li ").hover(function(){
+        // if(isOff){
+        //     $(this).find('.class').stop().slideDown(300);
+        // }else{
+        //     $(this).find('.class').stop().show();
+        // }
         $(this).find('.class').stop().show();
     },function(){
-        // setTimeout(function(){
-        //     $('.class').stop().slideUp(300);
-        // }, 500);
+        // if(!isOff){
+        //     $(this).find('.class').stop().slideUp(300);
+        // }else{
+        //     $(this).find('.class').stop().hide();
+        // }
         $(this).find('.class').stop().hide();
     });
     
@@ -93,7 +104,26 @@
         $(window).resize(function() {
             findDimensions();
         });
+        initEvents();
     }
+
+    // 侧边栏按钮
+    var isOpen = false;
+
+    function initEvents() {
+        $('#open-button').on('click',toggleMenu);	
+    }
+    function toggleMenu() {
+        if( isOpen ) {
+            $('html').removeClass('show-menu');
+            $('#open-button').removeClass('btn-close');
+        }else {
+            $('html').addClass('show-menu');
+            $('#open-button').addClass('btn-close');
+        }
+        isOpen = !isOpen;
+    }
+
 
     init();
 })();
