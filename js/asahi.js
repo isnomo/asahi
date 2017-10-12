@@ -106,15 +106,14 @@
         });
         initEvents();
 
-        // if (window.devicePixelRatio > 1) {
-        //     var images = $("img");
-        //     images.each(function(i) {
-        //         var x1 = $(this).attr('src');
-        //         var x2 = x1.replace(/(.*)(\.\w+)/, "$1@2x$2");
-        //         $(this).attr('src', x2);
-        //     });
-        //     alert('高清屏！');
-        // }
+        if (window.devicePixelRatio > 1) {
+            var images = $("img.retina");
+            images.each(function(i) {
+                var x1 = $(this).attr('src');
+                var x2 = 'x2' + x1;
+                // $(this).attr('src', x2);
+            });
+        }
     }
 
     // 侧边栏按钮
