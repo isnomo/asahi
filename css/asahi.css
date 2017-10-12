@@ -47,6 +47,9 @@ header .nav-logo{
     float: left;
     margin-right: 40px;
     margin-left: 15px;
+
+}
+header .nav-logo a img{
     width: 115px;
 }
 header .logo-text .navbar-nav li{
