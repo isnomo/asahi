@@ -47,6 +47,7 @@ header .nav-logo{
     float: left;
     margin-right: 40px;
     margin-left: 15px;
+    width: 115px;
 }
 header .logo-text .navbar-nav li{
     padding: 15px 40px;
@@ -165,7 +166,7 @@ header .logo-text .navbar-nav li .class ul li a:hover p{
     margin-left: -57.5px;
 }
 .phoneNav .pnohe-logo img{
-    height: 100%;
+    width: 115px;
 }
 
 .menu-btn{
@@ -291,6 +292,9 @@ footer{
 footer .foot-info{
     width: 800px;
     margin-top: 45px;
+}
+footer .footBrand{
+    width: 96px;
 }
 footer .foot-info p{
     font-family: PingFangSC-Medium;
