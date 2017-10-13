@@ -299,6 +299,9 @@
 .detail .bike-table .size{
    padding: 30px 60px;
 }
+.detail .bike-table .size img{
+   width: 161px;
+}
 .detail .bike-table .size h4{
     font-family: PingFangSC-Semibold;
     font-size: 24px;
