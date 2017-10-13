@@ -1,0 +1,240 @@
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.about .about-nav{
+    padding-left: 60px;
+}
+.about .about-nav ul{
+    text-align: center;
+}
+.about .about-nav ul li {
+    margin-bottom: 15px;
+    width: 170px;
+}
+.about .about-nav ul li a{
+    display: block;
+    background: #E0E0E0;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #6A6A6A;
+    letter-spacing: 1.31px;
+    line-height: 35px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.about .about-nav ul li a.active{
+    background: #003E81;
+    color: #fff;
+}
+.about .about-content{
+    width: 700px;
+}
+.about .about-content img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 40px;
+}
+.about .about-content p{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6A6A6A;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.about .about-content h4{
+    font-family: PingFangSC-Semibold;
+    font-size: 24px;
+    color: #6A6A6A;
+    letter-spacing: 1.57px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.about .about-content h3{
+    font-family: PingFangSC-Semibold;
+    font-size: 24px;
+    color: #003E81;
+    letter-spacing: 1.57px;
+    line-height: 35px;
+    margin: 60px 0;
+}
+.about .about-content .cost div{
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+}
+.about .about-content .cost div:first-child{
+    margin-left: 0;
+}
+.about .about-content .cost div img{
+    margin-bottom: 20px;
+}
+.about .about-content .cost div span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6A6A6A;
+    letter-spacing: 1px;
+}
+/* history */
+.about .history-content img{
+    width: 100%;
+}
+.about .history-content h4{
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #6A6A6A;
+    letter-spacing: 0.69px;
+    line-height: 20px;
+    margin: 15px 0 10px;
+}
+.about .history-content p{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6A6A6A;
+    letter-spacing: 0.54px;
+    line-height: 20px;
+    height: 80px;
+}
+.about .history-content .col-sm-6{
+    margin-bottom: 30px;
+}
+.about .history-content hr{
+    border-top: 2px solid #ddd;
+}
+.about .history-content h5{
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #6A6A6A;
+    letter-spacing: 0.69px;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+/* shops */
+.about .shops-content .shops-nav li{
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #6A6A6A;
+    letter-spacing: 0.67px;
+    line-height: 13px;
+    padding: 10px 0px;
+    width: 75px;
+    text-align: center;
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.about .shops-content .shops-nav li.active{
+    background: #003E81;
+    color: #fff;
+}
+.about .shops-content .shops-list{
+    margin-top: 30px;
+}
+.about .shops-content .shops-list table tr th{
+    border-top: 2px solid #ddd;
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #6A6A6A;
+    line-height: 22px;
+    padding: 20px;
+}
+.about .shops-content .shops-list table tr th:nth-child(1){
+    width: 30%;
+}
+.about .shops-content .shops-list table tr th:nth-child(2){
+    width: 30%;
+}
+.about .shops-content .shops-list table tr td{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6A6A6A;
+    line-height: 21px;
+    padding: 20px;
+}
+
+
+/*电脑*/
+@media screen  and (min-width:1400px){
+    
+}
+/*笔记本*/
+@media screen and (max-width: 1399px) and (min-width: 1200px){
+
+}
+/*横向平板*/
+@media screen and (max-width: 1199px) and (min-width: 1023px){
+
+}
+/*平板*/
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .about .about-nav ul li {
+        margin-bottom: 25px;
+        float: left;
+        width: 25%;
+        padding: 0 5px;
+    }
+    .about .about-nav ul li a {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+    .about .about-content{
+        width: 100%;
+    }
+    .about .about-nav{
+        padding-left: 15px;
+    }
+}
+/*笔记本高度*/
+@media screen and (max-height: 767px) and (min-height: 600px){
+
+}
+/*手机*/
+@media screen and (max-width: 767px){
+    .about .about-nav ul li {
+        margin-bottom: 25px;
+        float: left;
+        width: 25%;
+        padding: 0 5px;
+    }
+    .about .about-nav ul li a {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+    .about .about-content{
+        width: 100%;
+    }
+    .about .about-nav{
+        padding-left: 15px;
+    }
+    .about .about-content .cost div{
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+    }
+    .about .about-content .cost div img {
+        margin-bottom: 10px;
+    }
+    .about .shops-content .shops-list table tr th:nth-child(1){
+        width: 20%;
+    }
+    .about .shops-content .shops-list table tr th:nth-child(2){
+        width: 25%;
+    }
+    .about .shops-content .shops-nav li{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 320px){
+    
+}
+@media screen and (max-height: 601px) and (min-height: 350px){
+    
+}
