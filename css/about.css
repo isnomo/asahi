@@ -204,6 +204,9 @@
         width: 25%;
         padding: 0 5px;
     }
+    .about .about-nav ul li:first-child{
+        margin-left: -5px;
+    }
     .about .about-nav ul li a {
         font-size: 15px;
         padding: 5px 0;
@@ -222,18 +225,39 @@
     .about .about-content .cost div img {
         margin-bottom: 10px;
     }
+    .about .shops-content .shops-list table tr th{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .about .shops-content .shops-list table tr td{
+        padding: 10px;
+        font-size: 13px;
+    }
     .about .shops-content .shops-list table tr th:nth-child(1){
+        /* width: auto; */
         width: 20%;
     }
     .about .shops-content .shops-list table tr th:nth-child(2){
-        width: 25%;
+        /* width: auto; */
+       width: 30%;
     }
     .about .shops-content .shops-nav li{
         width: 20%;
+        margin-right: 2.9%;
+        margin-left: 1%;
     }
 }
 @media screen and (max-width: 320px){
-    
+    .about .about-nav ul li a{
+        letter-spacing: 0;
+        font-size: 14px;
+    }
+    .about .about-nav ul li {
+        padding: 0 3px;
+    }
+    .about .shops-content .shops-nav li {
+        margin-right: 2.8%;
+    }
 }
 @media screen and (max-height: 601px) and (min-height: 350px){
     
