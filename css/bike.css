@@ -21,6 +21,7 @@
     margin-top: -65px;
     margin-left: -65px;
     cursor: pointer;
+    z-index: 20;
 }
 .detail .detail-bike{
     /* width: 990px;
