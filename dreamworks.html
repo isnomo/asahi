@@ -305,6 +305,9 @@
         <div class="shade"></div>
         <!-- banner -->
         <div class="banner">
+            <div data-toggle="modal" href="#modal-video"  class="video-up">
+                <img src="img/videoUp.png" alt="">
+            </div>
             <!-- <img src="img/dream.jpg" alt=""> -->
             <img class="hidden-xs hidden-sm" src="img/dream.jpg" alt="">
             <img class="hidden-lg hidden-md" src="img/phoneBanner/dreams.jpg" alt="">
@@ -478,7 +481,22 @@
         <iframe id="footer" src="footer.html" frameborder="0"></iframe>
     </div>
 
-
+    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <video width="100%" id="modalPlay" height="auto" controls>
+                            <source src="http://test.stoyard.com/nomo/asahi/asahi.mp4" type="video/mp4"> 您的浏览器不支持 video 标签。
+                        </video>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
 
 
     <!--JS-->

@@ -7,9 +7,20 @@
 }
 .banner{
     width: 100%;
+    position: relative;
 }
 .banner img{
     width: 100%;
+}
+.banner .video-up{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    margin-top: -65px;
+    margin-left: -65px;
+    cursor: pointer;
 }
 .detail .detail-bike{
     /* width: 990px;
@@ -466,6 +477,19 @@
 }
 /*手机*/
 @media screen and (max-width: 767px){
+    .modal-lg{
+        width: auto;
+    }
+    .banner .video-up {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        cursor: pointer;
+    }
     .box_left,.box_right{
         display: none;
     }

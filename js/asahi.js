@@ -69,6 +69,21 @@
                 return false;
             }
         }
+        $('.video-up').click(function(){
+            setTimeout(function(){
+                var video = document.getElementById("modalPlay");
+                video.play();
+            }, 500);
+            // setTimeout(function(){
+            //     $('#modal-video .modal-header').fadeOut(300);
+            // }, 1000);
+        });
+
+        $('#modal-video .close').click(function(){
+            var video = document.getElementById("modalPlay");
+            video.pause();
+        });
+
     })
 
     $('.partner form button').click(function(){
