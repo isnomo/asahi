@@ -126,7 +126,7 @@
             images.each(function(i) {
                 var x1 = $(this).attr('src');
                 var x2 = 'x2' + x1;
-                // $(this).attr('src', x2);
+                $(this).attr('src', x2);
             });
         }
     }
