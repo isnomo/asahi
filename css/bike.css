@@ -40,7 +40,7 @@
     font-size:14px;
     color:#6a6a6a;
     letter-spacing:1px;
-    line-height:24px;
+    line-height:29px;
     text-align: justify;
 }
 
@@ -502,6 +502,9 @@
 }
 /*手机*/
 @media screen and (max-width: 767px){
+    .detail .detail-bike h5{
+        line-height:22px;
+    }
     .modal-lg{
         width: auto;
     }
