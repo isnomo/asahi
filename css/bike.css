@@ -503,7 +503,7 @@
 /*手机*/
 @media screen and (max-width: 767px){
     .detail .detail-bike h5{
-        line-height:22px;
+        line-height:25px;
     }
     .modal-lg{
         width: auto;
