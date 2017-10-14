@@ -91,7 +91,7 @@
     });
 
     // var isOff = true;
-    $("header .logo-text ul li ").hover(function(){
+    $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
         // if(isOff){
         //     $(this).find('.class').stop().slideDown(300);
         // }else{
@@ -107,7 +107,7 @@
         $(this).find('.class').stop().hide();
     });
     
-    $("header .logo-text ul li .noClick").click(function(){
+    $("header").find('.logo-text').find('.noClick').click(function(){
         event.preventDefault();
     });
 
@@ -155,12 +155,12 @@
         $('#open-button').removeClass('btn-close');
     });
 
-    // $("#menu-wall").load("menu.html", function() {
-    //     console.log("手机导航加载成功");
-    // });
-    // $("header").load("header.html", function() {
-    //     console.log("导航栏加载成功");
-    // });
+    $("#menu-wall").load("menu.html", function() {
+        console.log("手机导航加载成功");
+    });
+    $("#header").load("header.html", function() {
+        console.log("导航栏加载成功");
+    });
 
 
     init();
