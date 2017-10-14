@@ -40,7 +40,7 @@
     font-size:14px;
     color:#6a6a6a;
     letter-spacing:1px;
-    line-height:29px;
+    line-height:24px;
     text-align: justify;
 }
 
@@ -428,6 +428,11 @@
     border-left: 1px solid #6a6a6a;
     border-top: 1px solid #6a6a6a;
 }
+
+.zs .nomo-col-6:first-child{
+    border-left: 1px solid #907369;
+    border-top: 1px solid #907369;
+}
 .nomo-col-6 .size-text{
     display: inline-block;
     vertical-align: bottom;
@@ -454,6 +459,14 @@
 }
 .nomo-col-5:first-child,.nomo-col-5:nth-child(6){
     border-left: 1px solid #6a6a6a;
+}
+.zs .nomo-col-5{
+    border: 1px solid #907369;
+    border-left: 0px solid #907369;
+    border-top: 0px solid #907369;
+}
+.zs .nomo-col-5:first-child,.nomo-col-5:nth-child(6){
+    border-left: 1px solid #907369;
 }
 
 /* 棕色 */
@@ -527,9 +540,17 @@
         border-left: 1px solid #6a6a6a;
         border-top: 0px solid #6a6a6a;
     }
+    .zs .nomo-col-6{
+        border-left: 1px solid #907369;
+        border-top: 0px solid #907369;
+    }
     .nomo-col-5{
         width: 50%;
         border-left: 1px solid #6a6a6a;
+    }
+    .zs .nomo-col-5{
+        width: 50%;
+        border-left: 1px solid #907369;
     }
     .nomo-col-5:nth-child(even){
         border-left: 0px solid #6a6a6a;
