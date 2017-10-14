@@ -594,7 +594,7 @@
         text-align: center;
     }
     .detail .bike-table .size img{
-        width: auto;
+        width: 161px;
     }
 }
 @media screen and (max-height: 601px) and (min-height: 350px){
