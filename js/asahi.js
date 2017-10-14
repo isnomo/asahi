@@ -155,6 +155,9 @@
         $('#open-button').removeClass('btn-close');
     });
 
+    // $("#menu-wall").load("../menu.html", function() {
+    //     console.log("加载成功");
+    // });
 
 
     init();
