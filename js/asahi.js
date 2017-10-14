@@ -155,12 +155,12 @@
         $('#open-button').removeClass('btn-close');
     });
 
-    $("#menu-wall").load("menu.html", function() {
-        console.log("手机导航加载成功");
-    });
-    $("#header").load("header.html", function() {
-        console.log("导航栏加载成功");
-    });
+    // $("#menu-wall").load("menu.html", function() {
+    //     console.log("手机导航加载成功");
+    // });
+    // $("#header").load("header.html", function() {
+    //     console.log("导航栏加载成功");
+    // });
 
 
     init();
