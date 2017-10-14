@@ -111,6 +111,9 @@
         event.preventDefault();
     });
 
+    $('#wechat').click(function(){
+        $('.qcode').slideToggle();
+    });
 
     function init() {
 		findDimensions();

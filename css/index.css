@@ -268,7 +268,9 @@
  
 /*平板*/
 @media screen and (max-width: 1023px) and (min-width: 768px){
-
+    .company a.shop{
+        background-size: 720px;
+    }
 }
 /*笔记本高度*/
 @media screen and (max-height: 767px) and (min-height: 600px){

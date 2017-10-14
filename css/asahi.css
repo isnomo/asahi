@@ -372,6 +372,33 @@ footer .foot-last .SNS{
     top: 0;
     right: 0;
 }
+footer .foot-last .SNS .qcode{
+    display: none;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    top: -140px;
+    left: -45px;
+    box-shadow: 0 2px 44px rgba(0,0,0,0.5);
+}
+footer .foot-last .SNS .qcode img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin:  0 auto;
+}
+footer .foot-last .SNS .qcode span{
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+    position: absolute;
+    margin-left: 40px;
+    bottom: -10px;
+}
 footer .foot-last .SNS a{
     display: inline-block;
     width: 32px;
@@ -382,6 +409,7 @@ footer .foot-last .SNS .wechat{
     background-position: center;
     background-size: 32px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 footer .foot-last .SNS .weibo{
     margin-left: 15px;
@@ -395,7 +423,28 @@ footer .foot-last .SNS .weibo{
     height: 280px;
     position: absolute;
 }
-
+.wecode {
+    margin-top: 30px;
+}
+.wecode img{
+    width:260px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.wecode h5{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #00448c;
+    font-weight: 600;
+}
+.wecode p{
+    font-size: 14px;
+    text-align: center;
+    color: #00448c;
+}
 /*电脑*/
 @media screen  and (min-width:1400px){
     
