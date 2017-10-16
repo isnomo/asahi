@@ -323,3 +323,9 @@
         bottom: 2px;
     }
 }
+
+@media screen and (max-width: 320px){
+    .company a.phoneShop{
+        background-size: 350px;
+    }
+}
