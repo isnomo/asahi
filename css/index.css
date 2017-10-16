@@ -234,7 +234,11 @@
     background-size: 555px;
     background-repeat: no-repeat;
 }
-
+.company a.phoneShop{
+    background-image: url('../img/phonePlace.jpg');
+    background-size: 420px;
+    background-position: left;
+}
 
 
 
@@ -278,6 +282,10 @@
 }
 /*手机*/
 @media screen and (max-width: 767px){
+    .banner .img-btn-list > span{
+        width: 8px;
+        height: 8px;
+    }
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -312,6 +320,6 @@
         width: 100%;
     }
     .banner  .img-btn-list{
-        bottom: 5px;
+        bottom: 2px;
     }
 }
