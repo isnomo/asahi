@@ -140,20 +140,10 @@
     });
     $("#header").load("header.html", function() {
         console.log("导航栏加载成功");
-        // var isOff = true;
+
         $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
-            // if(isOff){
-            //     $(this).find('.class').stop().slideDown(300);
-            // }else{
-            //     $(this).find('.class').stop().show();
-            // }
             $(this).find('.class').stop().show();
         },function(){
-            // if(!isOff){
-            //     $(this).find('.class').stop().slideUp(300);
-            // }else{
-            //     $(this).find('.class').stop().hide();
-            // }
             $(this).find('.class').stop().hide();
         });
         
