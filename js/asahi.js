@@ -90,26 +90,6 @@
         alert('暂未开放，敬请期待！');
     });
 
-    // var isOff = true;
-    $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
-        // if(isOff){
-        //     $(this).find('.class').stop().slideDown(300);
-        // }else{
-        //     $(this).find('.class').stop().show();
-        // }
-        $(this).find('.class').stop().show();
-    },function(){
-        // if(!isOff){
-        //     $(this).find('.class').stop().slideUp(300);
-        // }else{
-        //     $(this).find('.class').stop().hide();
-        // }
-        $(this).find('.class').stop().hide();
-    });
-    
-    $("header").find('.logo-text').find('.noClick').click(function(){
-        event.preventDefault();
-    });
 
     $('#wechat').click(function(){
         $('.qcode').slideToggle();
@@ -160,8 +140,48 @@
     });
     $("#header").load("header.html", function() {
         console.log("导航栏加载成功");
+        // var isOff = true;
+        $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
+            // if(isOff){
+            //     $(this).find('.class').stop().slideDown(300);
+            // }else{
+            //     $(this).find('.class').stop().show();
+            // }
+            $(this).find('.class').stop().show();
+        },function(){
+            // if(!isOff){
+            //     $(this).find('.class').stop().slideUp(300);
+            // }else{
+            //     $(this).find('.class').stop().hide();
+            // }
+            $(this).find('.class').stop().hide();
+        });
+        
+        $("header").find('.logo-text').find('.noClick').click(function(){
+            event.preventDefault();
+        });
     });
-
+    
+    // var isOff = true;
+    $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
+        // if(isOff){
+        //     $(this).find('.class').stop().slideDown(300);
+        // }else{
+        //     $(this).find('.class').stop().show();
+        // }
+        $(this).find('.class').stop().show();
+    },function(){
+        // if(!isOff){
+        //     $(this).find('.class').stop().slideUp(300);
+        // }else{
+        //     $(this).find('.class').stop().hide();
+        // }
+        $(this).find('.class').stop().hide();
+    });
+    
+    $("header").find('.logo-text').find('.noClick').click(function(){
+        event.preventDefault();
+    });
 
     init();
 })();
