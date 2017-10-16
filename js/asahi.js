@@ -50,8 +50,7 @@
     })
 
     $(window).load(function () {
-        // showImages ();
-        
+        // showImages (); 
         $('.partner form input').keydown(function () {
             partnerBtn();
         });
@@ -74,9 +73,6 @@
                 var video = document.getElementById("modalPlay");
                 video.play();
             }, 500);
-            // setTimeout(function(){
-            //     $('#modal-video .modal-header').fadeOut(300);
-            // }, 1000);
         });
 
         $('#modal-video .close').click(function(){
@@ -84,16 +80,34 @@
             video.pause();
         });
 
+        $('.partner form button').click(function(){
+            alert('暂未开放，敬请期待！');
+        });
+    
+        $('#wechat').click(function(){
+            $('.qcode').slideToggle();
+        });
+
     })
 
-    $('.partner form button').click(function(){
-        alert('暂未开放，敬请期待！');
+    // 导航
+    $("#menu-wall").load("menu.html", function() {
+        // console.log("手机导航加载成功");
+    });
+    $("#header").load("header.html", function() {
+        // console.log("导航栏加载成功");
+
+        $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
+            $(this).find('.class').stop().show();
+        },function(){
+            $(this).find('.class').stop().hide();
+        });
+        
+        $("header").find('.logo-text').find('.noClick').click(function(){
+            event.preventDefault();
+        });
     });
 
-
-    $('#wechat').click(function(){
-        $('.qcode').slideToggle();
-    });
 
     function init() {
 		findDimensions();
@@ -135,23 +149,6 @@
         $('#open-button').removeClass('btn-close');
     });
 
-    $("#menu-wall").load("menu.html", function() {
-        console.log("手机导航加载成功");
-    });
-    $("#header").load("header.html", function() {
-        console.log("导航栏加载成功");
-
-        $("header").find('.logo-text').find('ul').find(' li ').hover(function(){
-            $(this).find('.class').stop().show();
-        },function(){
-            $(this).find('.class').stop().hide();
-        });
-        
-        $("header").find('.logo-text').find('.noClick').click(function(){
-            event.preventDefault();
-        });
-    });
-    
 
     init();
 })();
