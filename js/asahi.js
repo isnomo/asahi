@@ -80,8 +80,36 @@
             video.pause();
         });
 
-        $('.partner form button').click(function(){
-            alert('暂未开放，敬请期待！');
+        $('#collaborate button').click(function(){
+           
+            var formobj =  document.getElementById("collaborate");
+            var form = new FormData(formobj);
+
+            var re = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+            if(!re.test($('#collaborate input').val())){
+                $('.partner form button').attr('disabled','disabled').addClass('disabled');
+                alert('请输入正确的电子邮箱格式！');
+                return false;
+            }else{
+                $('.partner form button').removeAttr('disabled').removeClass('disabled');
+                $(this).html('提交中...');
+            }
+
+            $.ajax({
+                url: "http://www.cb-asahi.com.cn/home1/api/public/email_addform",
+                type: "POST",
+                data: form,
+                processData: false,
+                contentType: false,
+                success: function (res) {
+                    alert('提交成功！');
+                    // window.history.back(-1); 
+                    location.reload();
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("提交失败，请检查网络后重试。");
+                }
+            });
         });
     
         $('#wechat').click(function(){
