@@ -96,7 +96,7 @@
             }
 
             $.ajax({
-                url: "http://www.cb-asahi.com.cn/home1/api/public/email_addform",
+                url: "http://www.cb-asahi.com.cn/home/api/public/email_addform",
                 type: "POST",
                 data: form,
                 processData: false,
