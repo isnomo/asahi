@@ -418,6 +418,12 @@ footer .foot-last .SNS .weibo{
     background-size: 32px;
     background-repeat: no-repeat;
 }
+footer .foot-last .ga{
+    display: inline-block;
+    background: url('../img/ga.jpeg')no-repeat left;
+    padding-left: 25px;
+    margin-left: 15px;
+}
 #footer{
     width: 100%;
     height: 280px;
