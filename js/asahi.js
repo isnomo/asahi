@@ -177,6 +177,27 @@
         $('#open-button').removeClass('btn-close');
     });
 
+    // 百度推送
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+
+
+    // 百度统计
+    var _hmt = _hmt || [];
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?d1bd46829777d307e26dd1f7914929f4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+
+
 
     init();
 })();
